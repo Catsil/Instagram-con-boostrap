@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Instagram con Bootstrap</title>
+</head>
+<body>
+    <div class="container-fluid">
+      <!-- header -->
+        <header class="bg-light row align-items-center mt-3" style="height: 6rem;">
+          <div class="col-4 d-flex justify-content-center" >
+             <img src="logo_insta.png" style="height: 3rem;" class="img-fluid"> 
+        
+          </div>
+
+          <div class="col-6 offset-2 d-flex justify-content-center" style="height: 2rem;" >
+
+           <!-- Button trigger modal -->
+<button type="button" class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="height: 1.75rem;"  >
+  <p class="fs-10 mb-0" >Create a new post</p>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+        <form>
+          
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label"></label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+      </div>
+  
+      <div class="modal-footer d-flex justify-content-between">
+        
+        <div class="d-flex">
+          <i class="fas fa-camera"></i>
+          <i class="fas fa-map-marker-alt"></i></div>
+        <div class="butt">
+        <button type="button" class="btn btn-ligth" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success
+        ">Publish</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="dropdown" >
+                <button class="btn btn-ligth dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="height: 1.75rem;">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+        </header>
+
+
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class=" nav-link active bg-secondary" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"> <i class="fas fa-th"></i></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link bg-secondary" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"> <i class="fas fa-square"></i></button>
+          </li>
+          
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <main class="cuadricula">
+              <div class="row ">
+                <div class="col-4 p-1">
+                 <img src="https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk" class="img-fluid mx-auto d-block w-100 h-100">
+               </div>
+          <div class="col-4 p-1 ">
+            <img src="https://i.picsum.photos/id/1015/6000/4000.jpg?hmac=aHjb0fRa1t14DTIEBcoC12c5rAXOSwnVlaA5ujxPQ0I" class="img-fluid mx-auto d-block w-100 h-100">
+          </div>
+          <div class="col-4 p-1">
+            <img src="https://i.picsum.photos/id/1012/3973/2639.jpg?hmac=s2eybz51lnKy2ZHkE2wsgc6S81fVD1W2NKYOSh8bzDc" class="img-fluid mx-auto d-block w-100 h-100">
+          </div>
+        </div>
+        <div class="row ">
+            <div class="col-4 p-1">
+                <img src="https://i.picsum.photos/id/1018/3914/2935.jpg?hmac=3N43cQcvTE8NItexePvXvYBrAoGbRssNMpuvuWlwMKg" class="img-fluid mx-auto d-block w-100 h-100">
+            </div>
+            <div class="col-4 p-1">
+                <img src="https://i.picsum.photos/id/1019/5472/3648.jpg?hmac=2mFzeV1mPbDvR0WmuOWSiW61mf9DDEVPDL0RVvg1HPs" class="img-fluid mx-auto d-block w-100 h-100">
+            </div>
+            <div class="col-4 p-1">
+                <img src="https://i.picsum.photos/id/1022/6000/3376.jpg?hmac=FBA9Qbec8NfDlxj8xLhV9k3DQEKEc-3zxkQM-hmfcy0" class="img-fluid mx-auto d-block w-100 h-100">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 p-1">
+                <img src="https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y" class="img-fluid mx-auto d-block w-100 h-100">
+            </div>
+            <div class="col-4 p-1">
+                <img src="https://i.picsum.photos/id/1036/4608/3072.jpg?hmac=Tn9CS_V7lFSMMgAI5k1M38Mdj-YEJR9dPJCyeXNpnZc"class="img-fluid mx-auto d-block w-100 h-100">
+            </div>
+            <div class="col-4 p-1">
+                <img src="https://i.picsum.photos/id/1039/6945/4635.jpg?hmac=tdgHDygif2JPCTFMM7KcuOAbwEU11aucKJ8eWcGD9_Q" class="img-fluid mx-auto d-block w-100 h-100">
+            </div>
+          </div>
+        </main> 
+       
+            </div>
+            <div class="tab-pane fade d-flex justify-content-center" style="background-color: rgba(128, 128, 128, 0.377);" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> <article class="feed">
+              <div class="card mt-2" style="width: 25rem;">
+              <div class="card-header d-flex justify-content-between bg-white" style="width: 25rem; height: 3rem;">
+                <p>My first photo</p>
+                <span style="color:grey;">12/14</span>
+              </div>
+              
+                <img src="https://i.picsum.photos/id/1003/1181/1772.jpg?hmac=oN9fHMXiqe9Zq2RM6XT-RVZkojgPnECWwyEF1RvvTZk" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p">23 Likes</p>
+                  <p class="card-text">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+                  <div class="d-flex justify-content-start">
+                    <i class="far fa-heart p-1"></i>
+                    <p class="bg-danger;" style="color:gray">Comment...</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card mt-2" style="width: 25rem;">
+              <div class="card-header d-flex justify-content-between bg-white" style="width: 25rem; height: 3rem;">
+                <p>My second photo</p>
+                <span style="color:grey;">10/24</span>
+              </div>
+                <img src="https://images.pexels.com/photos/9256261/pexels-photo-9256261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">    
+                <div class="card-body">
+                  <p">23 Likes</p>
+                  <p class="card-text">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+                  <div class="d-flex justify-content-start">
+                    <i class="far fa-heart p-1"></i>
+                    <p class="bg-danger;" style="color:gray">Comment...</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mt-2" style="width: 25rem;">
+                <div class="card-header d-flex justify-content-between bg-white" style="width: 25rem; height: 3rem;">
+                  <p>My third photo</p>
+                  <span style="color:grey;">01/20</span>
+                </div>
+                  <img src="https://i.picsum.photos/id/1040/4496/3000.jpg?hmac=kvZONlBpTcZ16PuE_g2RWxlicQ5JKVq2lqqZndfafBY" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p">81 Likes</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="d-flex justify-content-start">
+                      <i class="far fa-heart p-1"></i>
+                      <p class="bg-danger;" style="color:gray">Comment...</p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="card mt-2" style="width: 25rem;">
+                  <div class="card-header d-flex justify-content-between bg-white" style="width: 25rem; height: 3rem;">
+                    <p>My fourth photo</p>
+                    <span style="color:grey;">06/02</span>
+                  </div>
+                    <img src="https://i.picsum.photos/id/1029/4887/2759.jpg?hmac=uMSExsgG8_PWwP9he9Y0LQ4bFDLlij7voa9lU9KMXDE" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p">237 Likes</p>
+                      <p class="card-text">SExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <div class="d-flex justify-content-start">
+                        <i class="far fa-heart p-1"></i>
+                        <p class="bg-danger;" style="color:gray">Comment...</p>
+                      </div>
+                    </div>
+                  </div>
+      
+        </div>
+    </div>
+  </div>
+      
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+</body>
+</html>
